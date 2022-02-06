@@ -1,2 +1,6 @@
 .pyc
+*.pyc
+gettingstarted/__pycache__/*.pyc
+euchre/__pycache__/*.pyc
+euchre/migrations/__pycache__/*.pyc
 .sqlite3
