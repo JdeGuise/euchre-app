@@ -18,4 +18,5 @@ urlpatterns = [
     path("", euchre.views.index, name="index"),
     path("db/", euchre.views.db, name="db"),
     path("admin/", admin.site.urls),
+    path("game/", euchre.views.gameDetail, name="gameDetail")
 ]
