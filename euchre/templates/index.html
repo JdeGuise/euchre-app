@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'lang-logo.png'%}">
+    </a>
+    <h1>Euchre</h1>
+    <form action="/game/" method="post" class="game_form">
+      <input type="text" name="user_name" class="game_form_user_name" placeholder="User Name"/>
+      <br/>
+      <button type="submit" class="transparent-with-outline btn" name='mybtn2' onclick="location.href='{% url 'gameDetail' %}'" value={{game_path}}>Play</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
