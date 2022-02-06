@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'lang-logo.png'%}">
+    </a>
+    <h1>Lobby</h1>
+    <h2>Connected Players</h2>
+    {% for entry in user_names %}
+      <p>{{ user_name }} </p>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
